@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/AbubakerCodes/easybank-landing-page)
-- Live Site URL: [Easybank landing page](https://easybank-landing-page.vercel.app)
+- Live Site URL: [Easybank landing page](https://easybank-landing-page24.vercel.app)
 
 ## My process
 
