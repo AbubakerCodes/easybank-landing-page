@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    font-family: 'Public Sans', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
+    font-size: 1.125rem; /*18px*/
+  }
+}
+
+@layer components {
+  .hover-line {
+    position: relative;
+  }
+  
+  .hover-line::after {
+    content: '';
+    display: block;
+    height: 4px; 
+    @apply bg-gradient-to-r from-brand-primary-green-400 to-brand-primary-cyan-400 ;
+    position: absolute;
+    width: 0;
+    bottom: -2.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  .hover-line:hover::after {
+    width: 100%;
+  }
+
+}
+
