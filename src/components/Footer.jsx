@@ -31,14 +31,14 @@ function Footer() {
                  {/* navLinks */}
                <div className=" flex flex-col md:flex-row md:justify-between items-start lg:items-start gap-4 lg:gap-[59px] lg:mr-auto">
                 <ul className="flex flex-col md:flex-row lg:flex-col items-start gap-4">
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">About</Link></li>
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">Contact</Link></li>
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">Blog</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/about">About</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/contact">Contact</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/blog">Blog</Link></li>
                 </ul>
                  <ul className="flex flex-col md:flex-row lg:flex-col items- lg:items-start gap-4" id="navLinks" >
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">Careers</Link></li>
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">Support</Link></li>
-                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/demo">Privacy Policy</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/careers">Careers</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/support">Support</Link></li>
+                     <li className={` hover:text-[#66c6b1] duration-200 ease-in`}><Link to="/privacy">Privacy Policy</Link></li>
                      
                  </ul>
                </div>

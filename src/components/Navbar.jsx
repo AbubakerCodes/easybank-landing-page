@@ -19,7 +19,7 @@ function Navbar () {
     return (
         <>
         {!isLargeScreen && <BackDrop isOpen={isMenuOpen} onClick={handleToggleMainMenu} />}
-        <nav id="navbar" className={`${isLargeScreen && "fixed top-0 min-w-full"}text-brand-primary-blue-200   lg:text-brand-secondary-blue-200 bg-opacity-100 bg-white z-100 relative`}>
+        <nav className={`${isLargeScreen && "fixed top-0 min-w-full"}text-brand-primary-blue-200   lg:text-brand-secondary-blue-200 bg-opacity-100 bg-white z-100 relative`}>
            
             {/* container */}
             <div className={` sm:relative mx-auto max-w-7xl  px-8 py-6 md:px-10 lg:px-16 lg:flex lg:flex-row lg:items-center lg:justify-between align-middle z-100`}>
@@ -45,12 +45,12 @@ function Navbar () {
 
                   {/* navLinks */}
                 <div className=" align-middle">
-                  <ul id="navLinks" className={`${!isMenuOpen && "sm:hidden"} sm:flex sm:flex-col items-center justify-center gap-6 sm:absolute top-1/2 translate-y-1/4 right-[50%] translate-x-1/2 sm:bg-white sm:px-6 sm:py-8 md:p-8 sm:w-[85%] sm:max-w-[400px]  sm:rounded-md z-100 lg:gap-12 lg:p-0 lg:relative lg:w-fit lg:h-[11px] lg:flex lg:flex-row  lg:bg-transparent `}>
-                      <li className={`${isLargeScreen && "hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/demo">Home</Link></li>
-                      <li className={`${isLargeScreen && "hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/demo">About</Link></li>
-                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/demo">Contact</Link></li>
-                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/demo">Blog</Link></li>
-                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/demo">Careers</Link></li>
+                  <ul className={`${!isMenuOpen && "sm:hidden"} sm:flex sm:flex-col items-center justify-center gap-6 sm:absolute top-1/2 translate-y-1/4 right-[50%] translate-x-1/2 sm:bg-white sm:px-6 sm:py-8 md:p-8 sm:w-[85%] sm:max-w-[400px]  sm:rounded-md z-100 lg:gap-12 lg:p-0 lg:relative lg:w-fit lg:h-[11px] lg:flex lg:flex-row  lg:bg-transparent `}>
+                      <li className={`${isLargeScreen && "hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/" onClick={() => setIsMenuOpen(prev => (prev, !prev))}>Home</Link></li>
+                      <li className={`${isLargeScreen && "hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/about" onClick={() => setIsMenuOpen(prev => (prev, !prev))}>About</Link></li>
+                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/contact" onClick={() => setIsMenuOpen(prev => (prev, !prev))}>Contact</Link></li>
+                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/blog" onClick={() => setIsMenuOpen(prev => (prev, !prev))}>Blog</Link></li>
+                      <li className={`${isLargeScreen &&"hover-line"} hover:text-brand-primary-blue-400 duration-200 ease-in`}><Link to="/careers" onClick={() => setIsMenuOpen(prev => (prev, !prev))}>Careers</Link></li>
                   </ul>
                 </div>
                 

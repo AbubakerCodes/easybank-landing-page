@@ -1,10 +1,13 @@
 import { Navbar } from './components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HeroSection from './components/HeroSection';
-import Features from './components/Features';
-import Articles from './components/Articles';
 import Footer from './components/Footer';
-import { Demo } from './pages/Demo';
+import { Home } from './pages/Home.jsx';
+import { About } from './pages/About.jsx';
+import { Contact } from './pages/Contact.jsx';
+import { Blog } from './pages/Blog.jsx';
+import { Careers } from './pages/Careers.jsx';
+import { Support } from './pages/Support.jsx';
+import { PrivacyPolicy } from './pages/PrivacyPolicy.jsx';
 
 function App() {
 
@@ -16,12 +19,13 @@ function App() {
       </header>
       <main>
       <Routes>
-        <Route path='/demo' element={<Demo />}/>
-        <Route path='/' element={<>
-          <HeroSection />
-        <Features />
-        <Articles />
-        </>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/careers' element={<Careers />} />
+        <Route path='/support' element={<Support />} />
+        <Route path='/privacy' element={<PrivacyPolicy />} />
       </Routes>
         
       </main>
